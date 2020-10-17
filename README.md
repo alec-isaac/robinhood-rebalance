@@ -59,12 +59,12 @@ Robinhood Rebalance requests your Robinhood Portfolio, ensures you are eligible 
    
 5. In run_rebalance.py input your Robinhood and/or Alpaca Info and Desired Cash Allocation:
 
-    ##### Equal Weight Rebalance
+    ##### Equal Weight Rebalance - No Authorized App Enabled - Alpaca Account Info Not Included
    
    ```python
    #run_rebalance.py
    
-    portfolio_rebalance = EqualWeight(config.ROBIN_EMAIL, config.ROBIN_PASS, None, .1) # no MFA Key Provided == no 2FA enabled
+    portfolio_rebalance = EqualWeight(config.ROBIN_EMAIL, config.ROBIN_PASS, None, .1)
     portfolio_rebalance.login_robinhood() #please see login information below to better understand prompts
     portfolio_rebalance.rebalance()
     ```
