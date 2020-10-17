@@ -286,6 +286,8 @@ The method login_robinhood contains the following default arguments:
 
 #### Caveats: 
 
+* Rebalance will only work if you are approved for fractionals and all shares in your portfolio are approved for fractional trading. [Which Shares Are Approved For Fractionals](https://robinhood.com/us/en/support/articles/fractional-shares/)
+
 * Only run the rebalance during market hours: the rebalance will techinically "run" after hours, but will not properly work. You will get all types of queued orders, however, because you cannot sell after hours, your buying power will be ineffective.
 
 * The rebalance will always sell shares to increase buying power before acquiring more. 
